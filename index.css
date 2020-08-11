@@ -40,3 +40,18 @@
 .c-bgbg{
     background-color: #0E153A;
 }
+
+.c-container{   
+    border-radius: 30px;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.c-img {
+    border-radius: 30px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#contact-left{float:left;width:100px;}
+#contact-right{float:right;width:100px;}
