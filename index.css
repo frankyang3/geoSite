@@ -41,6 +41,18 @@
     background-color: #0E153A;
 }
 
+.c-fontTitles{
+    font-size: 70px;
+}
+
+.c-subtitle{
+    font-size: 48px;
+}
+
+.c-paraFont{
+    font-size: 34px;
+}
+
 .c-container{   
     border-radius: 30px;
     max-width: 250px;
