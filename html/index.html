@@ -3,43 +3,70 @@
 
 <head>
     <title>George Xian Gao</title>
-    <!-- <link rel="stylesheet" href="../index.css"> -->
+    <link rel="stylesheet" href="../index.css"> 
     <link rel="stylesheet" href="../cube.css">
     <link rel="stylesheet" href="../w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Geo" />
     <style>
         body, h1,h2,h3,h4,h5,h6 {font-family: "Geo", sans-serif}
+      
+        body {
+            background-image: url("../assets/kai-pilger-Ef6iL87-vOA-unsplash.jpg");
+            background-repeat: repeat;
+            background-size: 100%;
+        }
     </style>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../index.js"></script>
+
+
 </head>
 
 <body>
-    <div id="wrapper">
-        <div class="viewport">
-          <div class="cube">
-            <div class="side">
-              <div class="cube-image">1</div>
-            </div>
-            <div class="side">
-              <div class="cube-image">2</div>
-            </div>
-            <div class="side">
-              <div class="cube-image">3</div>
-            </div>
-            <div class="side">
-              <div class="cube-image">4</div>
-            </div>
-            <div class="side">
-              <div class="cube-image">5</div>
-            </div>
-            <div class="side">
-              <div class="cube-image active">6</div>
-            </div>
-          </div>
+    
+    <section class="container">
+        
+
+
+        <div id="cube">
+            <figure class="front">
+                <svg width="600" height="300">
+                    <g>
+                        <rect width="600" height="300" style="fill:rgb(0,0,255);stroke-width:1;stroke:rgb(0,0,0)" />
+                        <text x="50" y="50" font-family="Geo" font-size="50" fill="white">George</text>
+                        <text x="270" y="150" font-family="Geo" font-size="50" fill="white">Xian</text>
+                        <text x="450" y="250" font-family="Geo" font-size="50" fill="white">Gao</text>
+                    </g>
+                </svg>
+            </figure>
+            <figure class="back">
+                <svg width="600" height="300">
+                    <rect width="600" height="300" style="fill:rgb(0,0,255);stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            </figure>
+            <figure class="right">
+                <svg width="300" height="300">
+                    <rect width="300" height="300" style="fill:rgb(0,0,255);stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            </figure>
+            <figure class="left">
+                <svg width="300" height="300">
+                    <rect width="300" height="300" style="fill:rgb(0,0,255);stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            </figure>
+            <figure class="top">
+                <svg width="600" height="300">
+                    <rect width="600" height="300" style="fill:rgb(0,0,255);stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            </figure>
+            <figure class="bottom">
+                <svg width="600" height="300">
+                    <rect width="600" height="300" style="fill:rgb(0,0,255);stroke-width:1;stroke:rgb(0,0,0)" />
+                </svg>
+            </figure>
         </div>
-      </div>
+    </section>
 
 </body>
 
