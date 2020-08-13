@@ -126,4 +126,24 @@ input[type=submit]:hover {
 
 }
 
+.c-backButton{
+    position: absolute;
+    left: 7%;
+    top: 10%;
+            }
+
+:root{
+    --backFontSize: 300%
+}
+.c-backFont{
+    font-size: var(--backFontSize);
+}
+
+.c-backHover:hover{
+    color: #278EA5; 
+}
+
+.c-backHoverFont:hover{
+    font-size: calc(var(--backFontSize) + 20%)
+}
 
