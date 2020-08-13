@@ -49,8 +49,17 @@
     font-size: 48px;
 }
 
+.c-subSubtitle{
+    font-size: 42px;
+}
+
+
 .c-paraFont{
     font-size: 34px;
+}
+
+.c-smallerParaFont{
+    font-size: 30px;
 }
 
 .c-contactLinkFont{

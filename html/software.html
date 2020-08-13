@@ -12,11 +12,30 @@
         .c-skipAroundPadding{
             margin-top: 5vh;
             margin-bottom: 5vh;
-            font-size: 48px;
             margin-right: 15vw;
             margin-left: 15vw;
             border-radius: 20px;
         }
+        .c-aboutFormating{
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            margin-right: 10vw;
+            margin-left: 10vw;
+            border-radius: 20px;
+        }
+        .c-gitHubLinkFormating{
+            line-height: 0.3;
+        }
+        .c-paraContainer {
+        border-radius: 20px;
+        margin-top:7px;
+        padding-top:5px;
+        padding-right:10px;
+        padding-left:10px;
+        padding-bottom:5px;
+        margin-left:20vw;
+        margin-right:20vw;
+        margin-bottom:100px;}
         
     </style>
     <script src="index.js"></script>
@@ -30,11 +49,81 @@
                 Software Projects</h1>
 
     <div class="c-center c-skipAroundPadding c-midBlueBg">
-    <p class="w3-card c-white w3-center">
+    <p class="w3-card c-white w3-center c-subtitle">
         Skip Around
+    </p> 
+    <p>
+
+    </p>
+    </div>
+
+    <div class='c-white w3-center'>
+        <!-- Project 1 Term Project-->
+        <p class='c-subSubtitle c-gitHubLinkFormating'>
+        Stock Analyzer (CMU 112 Term Project)</p>
+        <a href='https://github.com/gxgao/112-Term-Project-Stock-Scraper/'>
+        <p class='c-paraFont c-gitHubLinkFormating'>Github link</p></a>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qcPmRuLafEA" 
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+        picture-in-picture" allowfullscreen></iframe>
+            <!--About Page-->
+            <p class='c-subSubtitle c-gitHubLinkFormating'>About</p>
+            <div class='c.paraFont c-paraContainer c-midBlueBg'>
+                
+                <p class='c-smallerParaFont'>
+                    The program is a simple Stock Analyzer. It web scrapes
+                    for stock info and graphs it in a custom built 
+                    tkinter graphing interface. It also has the feature 
+                    to use multivariate regression to build a linear,
+                    and a polynomial regression model with time as the x-axis
+                    and price on the y-axis (The idea is to find trends over time).
+                    Additionally, it pulls, from the web, stock fundamentals 
+                    (p/e ratio, volume, ROA etc.) so that they can be easily accessed. 
+                    Furthermore, it analyzes the price chart and points out major 
+                    price fluctuations and uses a stock news API to get correlated news 
+                    for that price change. There is also an industry average 
+                    analyzer that, given a market cap and industry, it finds all 
+                    relevant companies and pulls the average values for each of 
+                    their fundamentals. This can then be used to compare individual 
+                    stocks within the industry to get a better financial sense of
+                    how a company is doing. This practice is commonly used in 
+                    accounting for horizontal and trend analysis. 
+                </p>
+            </div>
+
+        <!-- Project 2 NLTK + Web scraping-->
+        <p class='c-subSubtitle c-gitHubLinkFormating'>
+            Book Genre Analyzer</p>
+            <a href='https://github.com/gxgao/Hack-112-Stone-Face-Emote/'>
+            <p class='c-paraFont c-gitHubLinkFormating'>Github link</p></a>
+
+                <!--About Page-->
+                <p class='c-subSubtitle c-gitHubLinkFormating'>About</p>
+                <div class='c.paraFont c-paraContainer c-midBlueBg'>
+                    
+                    <p class='c-smallerParaFont'>
+                        The program is a simple Stock Analyzer. It web scrapes 
+                        for stock info and graphs it in a custom built 
+                        tkinter graphing interface. It also has the feature 
+                        to use multivariate regression to build a linear,
+                        and a polynomial regression model with time as the x-axis
+                        and price on the y-axis (The idea is to find trends over time).
+                        Additionally, it pulls, from the web, stock fundamentals 
+                        (p/e ratio, volume, ROA etc.) so that they can be easily accessed. 
+                        Furthermore, it analyzes the price chart and points out major 
+                        price fluctuations and uses a stock news API to get correlated news 
+                        for that price change. There is also an industry average 
+                        analyzer that, given a market cap and industry, it finds all 
+                        relevant companies and pulls the average values for each of 
+                        their fundamentals. This can then be used to compare individual 
+                        stocks within the industry to get a better financial sense of
+                        how a company is doing. This practice is commonly used in 
+                        accounting for horizontal and trend analysis. 
+                    </p>
+                </div>
 
     </div>
-    </p>
 
 </body>
 
