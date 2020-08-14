@@ -26,6 +26,9 @@
         .c-gitHubLinkFormating{
             line-height: 0.3;
         }
+        .c-gitHub:hover{
+            color: #278EA5;
+        }
         .c-paraContainer {
         border-radius: 20px;
         margin-top:7px;
@@ -36,6 +39,40 @@
         margin-left:20vw;
         margin-right:20vw;
         margin-bottom:100px;}
+
+        :root{
+            --sideLength: 50%;
+        }
+        
+        .c-paraSideContainer{
+        border-radius: 20px;
+        margin-top:7px;
+        padding-top:5px;
+        padding-right:5px;
+        padding-left:5px;
+        padding-bottom:5px;
+        margin-left:5vw;
+        margin-bottom:100px; 
+        max-width: var(--sideLength);
+        }
+        #c-paraProjects{
+            float:left;
+            width:50%; 
+        }
+        #c-imageRight{
+            float:right;
+            max-width:35%;
+            height: auto;
+            margin-right: 5vw;
+        }
+        .c-imageDescriber{
+        border-radius: 20px;
+        margin-top:10px;
+        margin-right:5vw;
+        margin-left: calc(var(--sideLength) + 10%);
+        margin-bottom:650px; /*ASK FRANKY ABOUT THIS AFTER */
+        max-width: 35%; 
+        }
         
     </style>
     <script src="index.js"></script>
@@ -48,21 +85,32 @@
     <h1 class="c-white w3-center c-fontTitles">
                 Software Projects</h1>
 
-    <div class="c-center c-skipAroundPadding c-midBlueBg">
-    <p class="w3-card c-white w3-center c-subtitle">
-        Skip Around
-    </p> 
-    <p>
-
-    </p>
+    <div class="c-center c-skipAroundPadding c-midBlueBg c-white w3-center">
+        <p class="w3-card x c-subtitle">
+            Skip Around
+        </p> 
+        <div class='c-smallerParaFont'>
+            <p class='c-gitHub'>
+                <a href='#Stock_Analyzer'>- Stock Analyzer</a>
+            </p>
+            <p class='c-gitHub'>
+                <a href='#Hack_112'>- Book Genre Catagorizer</a>
+            </p>
+            <p class='c-gitHub'>
+                <a href='#web1'>- This Website</a>
+            </p>
+            
+            
+        </div>
+    
     </div>
 
     <div class='c-white w3-center'>
         <!-- Project 1 Term Project-->
         <p class='c-subSubtitle c-gitHubLinkFormating'>
-        Stock Analyzer (CMU 112 Term Project)</p>
+        <a id='Stock_Analyzer'>Stock Analyzer (CMU 112 Term Project)</a></p>
         <a href='https://github.com/gxgao/112-Term-Project-Stock-Scraper/'>
-        <p class='c-paraFont c-gitHubLinkFormating'>Github link</p></a>
+        <p class='c-paraFont c-gitHubLinkFormating c-gitHub'>Github link</p></a>
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/qcPmRuLafEA" 
         frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
@@ -94,35 +142,80 @@
 
         <!-- Project 2 NLTK + Web scraping-->
         <p class='c-subSubtitle c-gitHubLinkFormating'>
-            Book Genre Analyzer</p>
+            <a id='Hack_112'>Book Genre Catagorizer</a></p>
             <a href='https://github.com/gxgao/Hack-112-Stone-Face-Emote/'>
-            <p class='c-paraFont c-gitHubLinkFormating'>Github link</p></a>
+            <p class='c-paraFont c-gitHubLinkFormating c-gitHub'>Github link</p></a>
 
                 <!--About Page-->
                 <p class='c-subSubtitle c-gitHubLinkFormating'>About</p>
-                <div class='c.paraFont c-paraContainer c-midBlueBg'>
+                <div class='c.paraFont c-paraSideContainer c-midBlueBg' id='c-paraProjects'>
                     
-                    <p class='c-smallerParaFont'>
-                        The program is a simple Stock Analyzer. It web scrapes 
-                        for stock info and graphs it in a custom built 
-                        tkinter graphing interface. It also has the feature 
-                        to use multivariate regression to build a linear,
-                        and a polynomial regression model with time as the x-axis
-                        and price on the y-axis (The idea is to find trends over time).
-                        Additionally, it pulls, from the web, stock fundamentals 
-                        (p/e ratio, volume, ROA etc.) so that they can be easily accessed. 
-                        Furthermore, it analyzes the price chart and points out major 
-                        price fluctuations and uses a stock news API to get correlated news 
-                        for that price change. There is also an industry average 
-                        analyzer that, given a market cap and industry, it finds all 
-                        relevant companies and pulls the average values for each of 
-                        their fundamentals. This can then be used to compare individual 
-                        stocks within the industry to get a better financial sense of
-                        how a company is doing. This practice is commonly used in 
-                        accounting for horizontal and trend analysis. 
+                    <p class='c-smallerParaFont' >
+                        This was a team project under the name Stone-Face-Emoji &#128511; 
+                        completed for the Hack 112 competition at Carnegie Mellon University. 
+                        <u>The project placed 2nd in the awards ceremony.</u>
+                        <br>
+                        <u>Contributors: George Gao, Shivank Joshi, Bryce Yeazell</u>
+                        <br>
+                        The project's goal was to analyze a given excerpt and 
+                        then tell the user what genre that excerpt came from.
+                        <br>
+                        The project ran in 3 parts. The first part was webscraping. 
+                        This was handled by me (George). The code simply ran through 
+                        a website gathering excerpts from books of popular genres 
+                        and assimulated them into a text file. This was done with the 
+                        help of selenium, beautiful soup, and requests.
+                        <br>
+                        The second part handled processing all the data to build 
+                        a database for each genre of a book and was handled mostly 
+                        by Shivank. He used TextBlob to read and analyze the 
+                        excerpts and assigned 'scores' to each excerpt based 
+                        on a few different catagories such as gramatical syntax,
+                        sentence structure, etc. He stored the scores in a seperate 
+                        text file.
+                        <br>
+                        The final part, the UI was designed by Bryce. 
+                        We used a modified tkinter module designed by Carnegie Mellon University. 
+                        It prompts users to enter an excerpt, and would return an image,
+                        as well as a guess as to which genre the excerpt had came from. 
+                        Updated UX was done by me (George) to bug fix some UI problems.
+                        <br>
+                        Note: This project is far from perfect as it was the first
+                        'large' project I attempted. Thus the analyzer does not always work.
+                        Further note, the longer a given excerpt to analyze the higher
+                        the change it will be closer to what the original book is. 
                     </p>
                 </div>
 
+                <div > <!-- image floats to the right-->
+                    <img src='../assets/demoNLTKProj.png' alt='Something Went Wrong :('
+                    class="w3-container" id='c-imageRight' style='padding-bottom: 20px;'>
+                    <p class='c-smallerParaFont c-imageDescriber c-midBlueBg'>
+                        The above image demonstrates the simple UI of the program.
+                        After inserting an excerpt from a Lord of the Rings passage,
+                        we are greeted with the program's guess as to what genre the
+                        passage best fits to. In this case, the program states that
+                        the passage fits the horror genre. 
+                    </p>
+                </div>
+
+
+
+        <p class='c-subSubtitle c-gitHubLinkFormating'>
+            <a id='web1'>This Website!</a></p>
+            <!-- Replace this Git hub link later with the actual Repo-->
+            <a href='https://github.com/gxgao/112-Term-Project-Stock-Scraper/'>
+            <p class='c-paraFont c-gitHubLinkFormating c-gitHub'>Github link</p></a>
+
+            <!--About Page-->
+            <p class='c-subSubtitle c-gitHubLinkFormating'>About</p>
+            <div class='c.paraFont c-paraContainer c-midBlueBg'>
+                            
+                <p class='c-smallerParaFont'>
+                    This website was a summer project I tackled alongside a friend,
+                    Frank Yang, in an attempt to learn Html, Javascript, and CSS. 
+                </p>
+            </div>
     </div>
 
 </body>
