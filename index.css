@@ -255,20 +255,30 @@ max-width: 35%;
 
 #c-fpTopLink{
     position:absolute;
+    left:43%;
+    align-items:center;
+    top:5%;
+    
     
 }
 
 #c-fpRightLink{
     position:absolute;
+    right:5%;
+    top:45%;
 
 }
 
 #c-fpLeftLink{
     position:absolute;
+    left:5%;
+    top:45%;
 
 }
 
 #c-fpBotLink{
     position:absolute;
+    bottom: 3%;
+    left: 45%
 
 }
