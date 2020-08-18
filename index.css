@@ -255,27 +255,50 @@ max-width: 35%;
 
 #c-fpTopLink{
     position:absolute;
+<<<<<<< HEAD
     left:48%;
     top:10%;
+=======
+    left:43%;
+    align-items:center;
+    top:5%;
+    
+    
+>>>>>>> c3ed661ff09f362e06050a550a2a1b0b04e40be3
 }
 
 #c-fpRightLink{
     position:absolute;
+<<<<<<< HEAD
     left:90%;
     top:50%;
+=======
+    right:5%;
+    top:45%;
+>>>>>>> c3ed661ff09f362e06050a550a2a1b0b04e40be3
 
 }
 
 #c-fpLeftLink{
     position:absolute;
+<<<<<<< HEAD
     left:50%;
     top:50%;
+=======
+    left:5%;
+    top:45%;
+>>>>>>> c3ed661ff09f362e06050a550a2a1b0b04e40be3
 
 }
 
 #c-fpBotLink{
     position:absolute;
+<<<<<<< HEAD
     left:48%;
     top:80%;
+=======
+    bottom: 3%;
+    left: 45%
+>>>>>>> c3ed661ff09f362e06050a550a2a1b0b04e40be3
 
 }
