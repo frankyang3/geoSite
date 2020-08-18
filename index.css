@@ -164,6 +164,7 @@ input[type=submit]:hover {
 .c-skipAroundPadding{
     margin-top: 5vh;
     margin-bottom: 5vh;
+    padding-bottom: 3vh;
     margin-right: 15vw;
     margin-left: 15vw;
     border-radius: 20px;
