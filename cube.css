@@ -3,7 +3,7 @@
 .container {
   margin: auto;
   margin-top: 15%;
-	width: 600px;
+	width: 300px;
 	height: 300px;
 	position: relative;
 	perspective: 1000px;
@@ -26,7 +26,7 @@
 }
 
 #cube .front {
-	transform: rotateY( 0deg) translateZ(203px);
+	transform: rotateY( 0deg) translateZ(200px);
 }
 
 #cube .back {
@@ -34,11 +34,11 @@
 }
 
 #cube .right {
-	transform: rotateY( -90deg) translateZ(-500px);
+	transform: rotateY( -90deg) translateZ(95px);
 }
 
 #cube .left {
-	transform: rotateY( -90deg) translateZ(95px);
+	transform: rotateY(-90deg) translateZ(-200px) ;
 }
 
 #cube .top {
