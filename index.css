@@ -248,3 +248,10 @@ margin-left: calc(var(--sideLength) + 10%);
 margin-bottom:30px; /*ASK FRANKY ABOUT THIS AFTER */
 max-width: 35%; 
 }
+
+.notransition {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+  }
