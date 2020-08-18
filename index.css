@@ -253,9 +253,22 @@ margin-bottom:30px; /*ASK FRANKY ABOUT THIS AFTER */
 max-width: 35%; 
 }
 
-.notransition {
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -o-transition: none !important;
-    transition: none !important;
-  }
+#c-fpTopLink{
+    position:absolute;
+    
+}
+
+#c-fpRightLink{
+    position:absolute;
+
+}
+
+#c-fpLeftLink{
+    position:absolute;
+
+}
+
+#c-fpBotLink{
+    position:absolute;
+
+}
