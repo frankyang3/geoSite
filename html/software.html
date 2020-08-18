@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Geo" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
         body, h1,h2,h3,h4,h5,h6 {font-family: "Geo", sans-serif}
             
@@ -18,6 +20,7 @@
         margin-bottom:650px; 
         max-width: 35%; 
         }
+        
 
         
     </style>
@@ -25,14 +28,19 @@
 </head>
 
 <body class='c-bgbg'> <!-- Sets backgorund color -->
+    
     <a href="../html/index.html" class="c-backFont c-backHoverFont">
         <i class="fa fa-chevron-left c-white c-backButton c-backHover"> </i>
     </a>
     <h1 class="c-white w3-center c-fontTitles">
                 Software Projects</h1>
 
+<<<<<<< HEAD
     <div class="c-center c-skipAroundPadding c-midBlueBg c-white w3-center">
 
+=======
+    <div data-aos="zoom-in" class="c-center c-skipAroundPadding c-midBlueBg c-white w3-center">
+>>>>>>> 01e627bcc9f6a72f8c120f9a8b919c2a34d3a67f
         <p class="w3-card c-subtitle c-paraSquish">
             Skip Around
         </p> 
@@ -43,7 +51,7 @@
             <p class='c-gitHub'>
                 <a href='#Hack_112'>- Book Genre Catagorizer</a>
             </p>
-            <p class='c-gitHub c-paraSquish'>
+            <p class='c-gitHub'>
                 <a href='#web1'>- This Website</a>
             </p>
             
@@ -54,15 +62,18 @@
 
     <div class='c-white w3-center'>
         <!-- Project 1 Term Project-->
-        <p class='c-subSubtitle c-gitHubLinkFormating'>
-        <a id='Stock_Analyzer'>Stock Analyzer (CMU 112 Term Project)</a></p>
-        <a href='https://github.com/gxgao/112-Term-Project-Stock-Scraper/'>
-        <p class='c-paraFont c-gitHubLinkFormating c-gitHub'>Github link</p></a>
+        <div data-aos="zoom-in">
+            <p class='c-subSubtitle c-gitHubLinkFormating'>
+            <a id='Stock_Analyzer'>Stock Analyzer (CMU 112 Term Project)</a></p>
+            <a href='https://github.com/gxgao/112-Term-Project-Stock-Scraper/'>
+            <p class='c-paraFont c-gitHubLinkFormating c-gitHub'>Github link</p></a>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/qcPmRuLafEA" 
-        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
-        picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qcPmRuLafEA" 
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+            picture-in-picture" allowfullscreen></iframe>
+        </div>
             <!--About Page-->
+        <div data-aos="zoom-in"> 
             <p class='c-subSubtitle c-gitHubLinkFormating'>About</p>
             <div class='c.paraFont c-paraContainer c-midBlueBg'>
                 
@@ -86,69 +97,71 @@
                     accounting for horizontal and trend analysis. 
                 </p>
             </div>
+        </div>
 
         <!-- Project 2 NLTK + Web scraping-->
-        <p class='c-subSubtitle c-gitHubLinkFormating'>
+        <div data-aos="zoom-in">
+            <p class='c-subSubtitle c-gitHubLinkFormating'>
             <a id='Hack_112'>Book Genre Catagorizer</a></p>
             <a href='https://github.com/gxgao/Hack-112-Stone-Face-Emote/'>
             <p class='c-paraFont c-gitHubLinkFormating c-gitHub'>Github link</p></a>
-
+        </div>
+        <div data-aos="zoom-in">
                 <!--About Page-->
-                <p class='c-subSubtitle c-gitHubLinkFormating'>About</p>
-                <div class='c.paraFont c-paraSideContainer c-midBlueBg' id='c-paraProjects'>
-                    
-                    <p class='c-smallerParaFont' >
-                        This was a team project under the name Stone-Face-Emoji &#128511; 
-                        completed for the Hack 112 competition at Carnegie Mellon University. 
-                        <u>The project placed 2nd in the awards ceremony.</u>
-                        <br>
-                        <u>Contributors: George Gao, Shivank Joshi, Bryce Yeazell</u>
-                        <br>
-                        The project's goal was to analyze a given excerpt and 
-                        then tell the user what genre that excerpt came from.
-                        <br>
-                        The project ran in 3 parts. The first part was webscraping. 
-                        This was handled by me (George). The code simply ran through 
-                        a website gathering excerpts from books of popular genres 
-                        and assimulated them into a text file. This was done with the 
-                        help of selenium, beautiful soup, and requests.
-                        <br>
-                        The second part handled processing all the data to build 
-                        a database for each genre of a book and was handled mostly 
-                        by Shivank. He used TextBlob to read and analyze the 
-                        excerpts and assigned 'scores' to each excerpt based 
-                        on a few different catagories such as gramatical syntax,
-                        sentence structure, etc. He stored the scores in a seperate 
-                        text file.
-                        <br>
-                        The final part, the UI was designed by Bryce. 
-                        We used a modified tkinter module designed by Carnegie Mellon University. 
-                        It prompts users to enter an excerpt, and would return an image,
-                        as well as a guess as to which genre the excerpt had came from. 
-                        Updated UX was done by me (George) to bug fix some UI problems.
-                        <br>
-                        Note: This project is far from perfect as it was the first
-                        'large' project I attempted. Thus the analyzer does not always work.
-                        Further note, the longer a given excerpt to analyze the higher
-                        the change it will be closer to what the original book is. 
-                    </p>
-                </div>
+            <p class='c-subSubtitle c-gitHubLinkFormating'>About</p>
+            <div class='c.paraFont c-paraSideContainer c-midBlueBg' id='c-paraProjects'>
+                <p class='c-smallerParaFont' >
+                This was a team project under the name Stone-Face-Emoji &#128511; 
+                completed for the Hack 112 competition at Carnegie Mellon University. 
+                <u>The project placed 2nd in the awards ceremony.</u>
+                <br>
+                <u>Contributors: George Gao, Shivank Joshi, Bryce Yeazell</u>
+                <br>
+                The project's goal was to analyze a given excerpt and 
+                then tell the user what genre that excerpt came from.
+                <br>
+                The project ran in 3 parts. The first part was webscraping. 
+                This was handled by me (George). The code simply ran through 
+                a website gathering excerpts from books of popular genres 
+                and assimulated them into a text file. This was done with the 
+                help of selenium, beautiful soup, and requests.
+                <br>
+                The second part handled processing all the data to build 
+                a database for each genre of a book and was handled mostly 
+                by Shivank. He used TextBlob to read and analyze the 
+                excerpts and assigned 'scores' to each excerpt based 
+                on a few different catagories such as gramatical syntax,
+                sentence structure, etc. He stored the scores in a seperate 
+                text file.
+                <br>
+                The final part, the UI was designed by Bryce. 
+                We used a modified tkinter module designed by Carnegie Mellon University. 
+                It prompts users to enter an excerpt, and would return an image,
+                as well as a guess as to which genre the excerpt had came from. 
+                Updated UX was done by me (George) to bug fix some UI problems.
+                <br>
+                Note: This project is far from perfect as it was the first
+                'large' project I attempted. Thus the analyzer does not always work.
+                Further note, the longer a given excerpt to analyze the higher
+                the change it will be closer to what the original book is. 
+                </p>
+            </div>
+        
+                 <!-- image floats to the right-->
+                <img src='../assets/demoNLTKProj.png' alt='Something Went Wrong :('
+                class="w3-container" id='c-imageRight' style='padding-bottom: 20px;'>
+                <p class='c-smallerParaFont c-midBlueBg c-imageDescriberS'>
+                    The above image demonstrates the simple UI of the program.
+                    After inserting an excerpt from a Lord of the Rings passage,
+                    we are greeted with the program's guess as to what genre the
+                    passage best fits to. In this case, the program states that
+                    the passage fits the horror genre. 
+                </p>
+            </div>
+       
 
-                <div > <!-- image floats to the right-->
-                    <img src='../assets/demoNLTKProj.png' alt='Something Went Wrong :('
-                    class="w3-container" id='c-imageRight' style='padding-bottom: 20px;'>
-                    <p class='c-smallerParaFont c-midBlueBg c-imageDescriberS'>
-                        The above image demonstrates the simple UI of the program.
-                        After inserting an excerpt from a Lord of the Rings passage,
-                        we are greeted with the program's guess as to what genre the
-                        passage best fits to. In this case, the program states that
-                        the passage fits the horror genre. 
-                    </p>
-                </div>
-
-
-
-        <p class='c-subSubtitle c-gitHubLinkFormating'>
+        <div data-aos="zoom-in">    
+            <p class='c-subSubtitle c-gitHubLinkFormating'>
             <a id='web1'>This Website!</a></p>
             <!-- Replace this Git hub link later with the actual Repo-->
             <a href='https://github.com/gxgao/112-Term-Project-Stock-Scraper/'>
@@ -156,15 +169,17 @@
 
             <!--About Page-->
             <p class='c-subSubtitle c-gitHubLinkFormating'>About</p>
-            <div class='c.paraFont c-paraContainer c-midBlueBg'>
-                            
+            <div class='c.paraFont c-paraContainer c-midBlueBg'>             
                 <p class='c-smallerParaFont'>
                     This website was a summer project I tackled alongside a friend,
                     Frank Yang, in an attempt to learn Html, Javascript, and CSS. 
                 </p>
             </div>
+        </div>
     </div>
-
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
