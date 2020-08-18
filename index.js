@@ -20,8 +20,11 @@ $(document).on("mouseup", function() {
 
 
 function mouseMoved(ev) {
-	var deltaX = 300 - lastMouseX;
-    var deltaY = 300 - lastMouseY;
+	var w = window.innerWidth;
+	var h = window.innerHeight;
+
+	var deltaX = w/2 - lastMouseX;
+    var deltaY = h/2 - lastMouseY;
     
     //console.log("mouseMoved" + deltaX + " lastMouseX" + lastMouseX + ev.pageX)
 	lastMouseX = ev.pageX;
@@ -29,6 +32,6 @@ function mouseMoved(ev) {
 
 	rotY -= deltaX * 0.000001;
 	rotX += deltaY * 0.000001;
-    $("#cube").css("transform", "none");
+
 	$("#cube").css("transform", "translateZ( -100px) rotateX( " + rotX + "deg) rotateY(" + rotY + "deg)");
 }
