@@ -142,7 +142,8 @@ input[type=submit]:hover {
             }
 
 :root{
-    --backFontSize: 300%
+    --backFontSize: 300%;
+    --sideLength: 50%;
 }
 .c-backFont{
     font-size: var(--backFontSize);
@@ -156,3 +157,94 @@ input[type=submit]:hover {
     font-size: calc(var(--backFontSize) + 20%)
 }
 
+.c-paraSquish{
+    margin:0;
+}
+
+.c-skipAroundPadding{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-right: 15vw;
+    margin-left: 15vw;
+    border-radius: 20px;
+}
+.c-aboutFormating{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    border-radius: 20px;
+}
+.c-gitHubLinkFormating{
+    line-height: 0.3;
+}
+.c-gitHub:hover{
+    color: #278EA5;
+}
+.c-paraContainer {
+border-radius: 20px;
+margin-top:7px;
+padding-top:5px;
+padding-right:10px;
+padding-left:10px;
+padding-bottom:5px;
+margin-left:20vw;
+margin-right:20vw;
+margin-bottom:100px;}
+
+
+
+.c-paraSideContainer{
+border-radius: 20px;
+margin-top:7px;
+padding-top:5px;
+padding-right:5px;
+padding-left:5px;
+padding-bottom:5px;
+margin-left:5vw;
+margin-bottom:100px; 
+max-width: var(--sideLength);
+}
+#c-paraProjects{
+    float:left;
+    width:50%; 
+}
+#c-imageRight{
+    float:right;
+    max-width:35%;
+    height: auto;
+    margin-right: 5vw;
+}
+
+
+
+.c-paraSideContainer{
+border-radius: 20px;
+margin-top:7px;
+padding-top:5px;
+padding-right:5px;
+padding-left:5px;
+padding-bottom:5px;
+margin-left:5vw;
+margin-bottom:100px; 
+max-width: var(--sideLength);
+}
+#c-sideVideo{
+    float:left;
+ 
+}
+#c-imageRight{
+    float:right;
+    max-width:35%;
+    height: auto;
+    margin-right: 5vw;
+}
+
+.c-imageDescriber{
+border-radius: 20px;
+margin-top:10px;
+margin-right:5vw;
+margin-left: calc(var(--sideLength) + 10%);
+margin-bottom:30px; /*ASK FRANKY ABOUT THIS AFTER */
+max-width: 35%; 
+}
