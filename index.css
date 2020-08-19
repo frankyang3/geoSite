@@ -87,17 +87,21 @@
     left:50%
   }
 
+#c-resumeBox{
+    
+}
 
 
 #contact-left{float:left;width:50%; margin-left: 100px}
-#contact-right{float:right;width:50%;max-width:480px; margin-right: 100px}
+#contact-right{float:left;width:50%;max-width:480px; margin-right: 100px}
 
 
 @media all and (max-width: 1400px) {
     .c-vl { display: none;}
     #contact-left{float:left;width:50%; margin-left: 10px}
-    #contact-right{float:right;width:50%;max-width:480px; margin-right: 10px}
+    #contact-right{float:left;width:50%;max-width:480px; margin-right: 10px; margin-left: 10px;}
 }
+
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
