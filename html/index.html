@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Geo" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
         body, h1,h2,h3,h4,h5,h6 {font-family: "Geo", sans-serif}
       
@@ -20,15 +22,21 @@
         .c-sendToBack{
             z-index: -200;
         }
+        
+        .c-mobile{
+            display:none;
+        } 
+        .c-monitor{
+            display:block;
+        } 
 
-                
+
         @media all and (max-width: 900px) {
             body{
                 background-image:none;
                 background-color: #0E153A;
             }
-    
-            .c-hide{
+            .c-monitor{
                 display:none;
             }
             .c-mobile{
@@ -63,7 +71,7 @@
 </head>
 
 <body>
-    <div class=c-hide>
+    <div class=c-monitor>
         <section class="container">
             <div id="cube">
                 <figure class="front">
@@ -112,11 +120,13 @@
     </div>
     </div>
 
-<div class="c-mobile c-white c-bgbg w3-center c-hide "> <!-- This is for mobile formating-->
+
+<div class="c-mobile c-white c-bgbg w3-center c-hide" > <!-- This is for mobile formating-->
+
     <p class="c-fontTitles">
         George xian Gao
     </p>
-    <div class='c-midBlueBg w3-container c-container c-blockContainer'>
+    <div data-aos="zoom-in" class='c-midBlueBg w3-container c-container c-blockContainer'>
         <p class="c-backHover c-subtitle c-lineHeight "> 
             <a href='../html/resume.html'>Resume</a>
         </p>
@@ -124,7 +134,7 @@
         class="w3-container c-container" id='resumeFormatting' style='padding-bottom: 20px;'>
     </div>
 
-    <div class="c-midBlueBg w3-container c-container c-blockContainer">
+    <div data-aos="zoom-in" class="c-midBlueBg w3-container c-container c-blockContainer">
         <p class="c-backHover c-subSubtitle c-lineHeight"> 
             <a href='../html/software.html'>
                 Software Projects
@@ -134,7 +144,7 @@
         class="w3-container c-container" id='resumeFormatting' style='padding-bottom: 20px;'>
     </div>
 
-    <div class="c-midBlueBg w3-container c-container c-blockContainer">
+    <div data-aos="zoom-in" class="c-midBlueBg w3-container c-container c-blockContainer">
         <p class="c-backHover c-subSubtitle c-lineHeight"> 
             <a href='../html/hardware.html'>
                 Hardware Projects
@@ -144,7 +154,7 @@
         class="w3-container c-container" id='resumeFormatting' style='padding-bottom: 20px;'>
     </div>
  
-    <div class="c-midBlueBg w3-container c-container c-blockContainer">
+    <div data-aos="zoom-in" class="c-midBlueBg w3-container c-container c-blockContainer">
         <p class="c-backHover c-subSubtitle c-lineHeight"> 
             <a href='../html/contact.html'>
                 About Me
@@ -153,8 +163,12 @@
         <img src='../assets/indexMe.jpg' alt='Something Went Wrong :('
         class="w3-container c-container" id=photoMe style='padding-bottom: 20px;'>
     </div>
-    
-    </div>
+
+  </div>
+  <script>
+      AOS.init();
+  </script>
+
 </body>
 
 </html>
