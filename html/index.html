@@ -20,14 +20,20 @@
         .c-sendToBack{
             z-index: -200;
         }
-                
+        
+        .c-mobile{
+            display:none;
+        } 
+        .c-monitor{
+            display:block;
+        } 
+
         @media all and (max-width: 900px) {
             body{
                 background-image:none;
                 background-color: #0E153A;
             }
-    
-            .c-hide{
+            .c-monitor{
                 display:none;
             }
             .c-mobile{
@@ -62,7 +68,7 @@
 </head>
 
 <body>
-    <div class=c-hide>
+    <div class=c-monitor>
         <section class="container">
             <div id="cube">
                 <figure class="front">
@@ -111,7 +117,7 @@
     </div>
     </div>
 
-<div class="c-mobile c-white c-bgbg w3-center "> <!-- This is for mobile formating-->
+<div class="c-mobile c-white c-bgbg w3-center c-hide" > <!-- This is for mobile formating-->
     <p class="c-fontTitles">
         George xian Gao
     </p>
