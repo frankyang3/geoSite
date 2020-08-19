@@ -20,6 +20,40 @@
         .c-sendToBack{
             z-index: -200;
         }
+                
+        @media all and (max-width: 900px) {
+            body{
+                background-image:none;
+                background-color: #0E153A;
+            }
+    
+            .c-hide{
+                display:none;
+            }
+            .c-mobile{
+                display:block;
+            }
+            #resumeFormatting{
+                width:90%;
+                object-fit: cover;
+                height: 125px;    
+            }
+            .c-lineHeight{
+                line-height: 0.5;
+            }
+            .c-blockContainer{
+                margin-top:10%;
+                margin-right: 5%;
+                margin-left:5%;
+                
+            }
+            #photoMe{
+                width:90%
+                
+                
+            }
+        }
+
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../index.js"></script>
@@ -28,60 +62,98 @@
 </head>
 
 <body>
-    
-    <section class="container">
-        <div id="cube">
-            <figure class="front">
-                <svg width="300" height="300">
-                    <g>
-                        <rect width="300" height="300" style="fill:rgb(49,104,211);stroke-width:1;stroke:rgb(0,0,0)" />
-                        <text x="50" y="50" font-family="Geo" font-size="50" fill="white">George</text>
-                        <text x="125" y="150" font-family="Geo" font-size="50" fill="white">Xian</text>
-                        <text x="200" y="250" font-family="Geo" font-size="50" fill="white">Gao</text>
-                    </g>
-                </svg>
-            </figure>
-            <figure class="back">
-                <svg width="300" height="300">
-                    <rect width="300" height="300" style="fill:rgb(17, 30, 56);stroke-width:1;stroke:rgb(0,0,0)" />
-                </svg>
-            </figure>
-            <figure class="right">
-                <svg width="300" height="300">
-                    <rect width="300" height="300" style="fill:rgb(32, 66, 133);stroke-width:1;stroke:rgb(0,0,0)" />
-                </svg>
-            </figure>
-            <figure class="left">
-                <svg width="300" height="300">
-                    <rect width="300" height="300" style="fill:rgb(32, 66, 133);stroke-width:1;stroke:rgb(0,0,0)" />
-                </svg>
-            </figure>
-            <figure class="top">
-                <svg width="300" height="300">
-                    <rect width="300" height="300" style="fill:rgb(32, 66, 133);stroke-width:1;stroke:rgb(0,0,0)" />
-                </svg>
-            </figure>
-            <figure class="bottom">
-                <svg width="300" height="300">
-                    <rect width="300" height="300" style="fill:rgb(32, 66, 133);stroke-width:1;stroke:rgb(0,0,0)" />
-                </svg>
-            </figure>
-        </div>
-    </section>
+    <div class=c-hide>
+        <section class="container">
+            <div id="cube">
+                <figure class="front">
+                    <svg width="300" height="300">
+                        <g>
+                            <rect width="300" height="300" style="fill:rgb(44,0,0);stroke-width:1;stroke:rgb(0,0,0)" />
+                            <text x="50" y="50" font-family="Geo" font-size="50" fill="white">George</text>
+                            <text x="125" y="150" font-family="Geo" font-size="50" fill="white">Xian</text>
+                            <text x="200" y="250" font-family="Geo" font-size="50" fill="white">Gao</text>
+                        </g>
+                    </svg>
+                </figure>
+                <figure class="back">
+                    <svg width="300" height="300">
+                        <rect width="300" height="300" style="fill:rgb(0,0,255);stroke-width:1;stroke:rgb(0,0,0)" />
+                    </svg>
+                </figure>
+                <figure class="right">
+                    <svg width="300" height="300">
+                        <rect width="300" height="300" style="fill:rgb(0,0,255);stroke-width:1;stroke:rgb(0,0,0)" />
+                    </svg>
+                </figure>
+                <figure class="left">
+                    <svg width="300" height="300">
+                        <rect width="300" height="300" style="fill:rgb(0,0,255);stroke-width:1;stroke:rgb(0,0,0)" />
+                    </svg>
+                </figure>
+                <figure class="top">
+                    <svg width="300" height="300">
+                        <rect width="300" height="300" style="fill:rgb(0,0,255);stroke-width:1;stroke:rgb(0,0,0)" />
+                    </svg>
+                </figure>
+                <figure class="bottom">
+                    <svg width="300" height="300">
+                        <rect width="300" height="300" style="fill:rgb(0,0,255);stroke-width:1;stroke:rgb(0,0,0)" />
+                    </svg>
+                </figure>
+            </div>
+        </section>
 
-<div class=c-sendToBack>
-    <h1 id="c-fpTopLink" class="c-white c-backHover"><a href="resume.html">Resume & CV</a></h1>
-    <h1 id="c-fpLeftLink" class="c-white c-backHover"><a href="hardware.html">Hardware<br>Projects</a></h1>
-    <h1 id="c-fpRightLink" class="c-white c-backHover"><a href="software.html">Software<br>Projects</a></h1>
-    <h1 id="c-fpBotLink"class="c-white c-backHover"><a href="contact.html">About Me</a></h1>
+    <div class=c-sendToBack>
+        <h1 id="c-fpTopLink" class="c-white">Resume and CV</h1>
+        <h1 id="c-fpLeftLink" class="c-white">Hardware<br>Projects</h1>
+        <h1 id="c-fpRightLink" class="c-white">Software<br>Projects</h1>
+        <h1 id="c-fpBotLink"class="c-white">About Me</h1>
+    </div>
+    </div>
+
+<div class="c-mobile c-white c-bgbg w3-center "> <!-- This is for mobile formating-->
+    <p class="c-fontTitles">
+        George xian Gao
+    </p>
+    <div class='c-midBlueBg w3-container c-container c-blockContainer'>
+        <p class="c-backHover c-subtitle c-lineHeight"> 
+            <a href='../assets/resume.html'>Resume</a>
+        </p>
+        <img src='../assets/Resume.png' alt='Something Went Wrong :('
+        class="w3-container" id='resumeFormatting' style='padding-bottom: 20px;'>
+    </div>
+
+    <div class="c-midBlueBg w3-container c-container c-blockContainer">
+        <p class="c-backHover c-subSubtitle c-lineHeight"> 
+            <a href='../assets/software.html'>
+                Software Projects
+            </a>
+        </p>
+        <img src='../assets/codingImg.png' alt='Something Went Wrong :('
+        class="w3-container" id='resumeFormatting' style='padding-bottom: 20px;'>
+    </div>
+
+    <div class="c-midBlueBg w3-container c-container c-blockContainer">
+        <p class="c-backHover c-subSubtitle c-lineHeight"> 
+            <a href='../assets/software.html'>
+                Hardware Projects
+            </a>
+        </p>
+        <img src='../assets/hardwareImg.png' alt='Something Went Wrong :('
+        class="w3-container" id='resumeFormatting' style='padding-bottom: 20px;'>
+    </div>
+ 
+    <div class="c-midBlueBg w3-container c-container c-blockContainer">
+        <p class="c-backHover c-subSubtitle c-lineHeight"> 
+            <a href='../assets/software.html'>
+                About Me
+            </a>
+        </p>
+        <img src='../assets/indexMe.jpg' alt='Something Went Wrong :('
+        class="w3-container c-container" id=photoMe style='padding-bottom: 20px;'>
+    </div>
+    
 </div>
-
-
-    
-    
-    
-    
-
 </body>
 
 </html>
